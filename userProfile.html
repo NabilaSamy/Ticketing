@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Sidemenu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><i class="fas fa-chevron-left"></i>☰</a>
+        <img class="mx-auto d-block rounded-circle" src="images/Client.jpg" alt="">
+        <span class="user-name text-center">Nabila Samy</span><br>
+        <a class="text-center" href="userProfile.html"><i class="fas fa-user"></i> Profile</a>
+        <a class="text-center" href="Client_Admin_Manage_Client.html"><i class="fas fa-user"></i> Add Clients to Org.</a>
+        <a class="text-center" href="Client_Admin_Manage_Ticket.html"><i class="fas fa-user"></i> Admin Create Tickets</a>
+        <a class="text-center" href="Client_Admin_View_Projects.html"><i class="fas fa-user"></i> Admin View Projects</a>
+        <a class="text-center" href="Client_User_Manage_Ticket.html"><i class="fas fa-user"></i> User Create Tickets</a>
+        <a class="text-center" href="OrgAdmin_Clients_Manage.html"><i class="fas fa-user"></i> Manage Page</a>
+        <a class="text-center" href="OrgAdmin_Manage_Org.html"><i class="fas fa-user"></i> Org. Data</a>
+        <a class="text-center" href="OrgAdmin_Manage_Tickets.html"><i class="fas fa-user"></i> Manage Tickets</a>
+        <a class="text-center" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <!-- End Sidemenu -->
+
+    <div id="main">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: var(--primary) !important;">
+            <button class="openbtn" onclick="openSide()">☰</button>
+            <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+            <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+            <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start User Profile -->
+        <div class="userProfile">
+            <div class="container text-center">
+                <h1>Your Profile</h1>
+                <hr style="background-color: var(--primary) !important;">
+                <form id="editInfo" name="editUserProfile">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md">
+                                <img class="mx-auto d-block" src="images/Client.jpg" name="img" id="img" alt="">
+                            </div>
+                            <div class="col-md">
+                                <input style="position: relative; top: 50px; right: 300px;" type="file" name="myFile">
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">First Name:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="text" name="f_name" id="f_name" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">Middle Name:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="text" name="m_name" id="m_name" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">Last Name:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="text" name="l_name" id="l_name" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">Arabic Name:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="text" name="ar_name" id="ar_name" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">Email:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="email" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">Telephone:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="number" name="telephone" id="telephone" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span style="position: relative; top: 10px;">New Password:</span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <input class="form-control form-control-lg" type="password" name="psw" id="psw" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="userProfile();">Save</button>
+                </form>
+                <form action="#"><button class="btn btn-secondary">Cancel</button></form>
+            </div>
+        </div>
+        <!-- End User Profile -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/Ticket - js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top m-0" style="background-color: var(--primary) !important;">
+        <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+        <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+        <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Login -->
+    <div class="login">
+        <div class="container">
+            <form method="post" name="loginForm" id="login">
+                <h1 class="text-center">Login Form</h1>
+                <hr style="background-color: var(--primary) !important;">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control form-control-lg" type="email" id="email" placeholder="Enter your E-mail" required><br>
+                    <label>Password</label>
+                    <input class="form-control form-control-lg" type="password" id="psw" placeholder="Enter your Password" required>
+                </div>
+
+                <div class="row forget-rem">
+                    <div class="col-md">
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="rem">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div>
+                            <span class="forgot">Forgot <a href="ForgotPage.html">password?</a></span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block btn-login" style="background-color: var(--primary) !important;" onclick="validateLoginForm();">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- End Login -->
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/Ticket - js.js"></script>
+
+</body>
+
+</html>

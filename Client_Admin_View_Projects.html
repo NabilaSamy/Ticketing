@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>View Projects</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Sidemenu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><i class="fas fa-chevron-left"></i>☰</a>
+        <img class="mx-auto d-block rounded-circle" src="images/Client.jpg" alt="">
+        <span class="user-name text-center">Nabila Samy</span><br>
+        <a class="text-center" href="userProfile.html"><i class="fas fa-user"></i> Profile</a>
+        <a class="text-center" href="Client_Admin_Manage_Client.html"><i class="fas fa-user"></i> Add Clients to Org.</a>
+        <a class="text-center" href="Client_Admin_Manage_Ticket.html"><i class="fas fa-user"></i> Admin Create Tickets</a>
+        <a class="text-center" href="Client_Admin_View_Projects.html"><i class="fas fa-user"></i> Admin View Projects</a>
+        <a class="text-center" href="Client_User_Manage_Ticket.html"><i class="fas fa-user"></i> User Create Tickets</a>
+        <a class="text-center" href="OrgAdmin_Clients_Manage.html"><i class="fas fa-user"></i> Manage Page</a>
+        <a class="text-center" href="OrgAdmin_Manage_Org.html"><i class="fas fa-user"></i> Org. Data</a>
+        <a class="text-center" href="OrgAdmin_Manage_Tickets.html"><i class="fas fa-user"></i> Manage Tickets</a>
+        <a class="text-center" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <!-- End Sidemenu -->
+
+    <div id="main">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: var(--primary) !important;">
+            <button class="openbtn" onclick="openSide()">☰</button>
+            <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+            <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+            <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Organization Admin_Organization Page -->
+        <div class="cli_adm_view_proj text-center">
+            <div class="container">
+                <h1>Welcome to Client's Projects and Sub-projects Page</h1>
+                <hr style="background-color: var(--primary) !important;">
+                <br>
+                <table border=3 align="center" class="project_table">
+                    <th colspan="4">Project Table</th>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Files</th>
+                    </tr>
+
+                    <tr>
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>Status</td>
+                        <td>Files</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table border=3 align="center" class="subProj_table">
+                    <th colspan="6">Sub-Project Table</th>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Warrenty Start</th>
+                        <th>Warrenty End</th>
+                        <th>Status</th>
+                        <th>Files</th>
+                    </tr>
+
+                    <tr>
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>Warrenty Start</td>
+                        <td>Warrenty End</td>
+                        <td>Status</td>
+                        <td>Files</td>
+                    </tr>
+
+                </table>
+                <br>
+                <form action="userProfile.html"><button class="btn btn-secondary">Cancel</button></form>
+            </div>
+        </div>
+        <!-- End Organization Admin_Organization Page -->
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/Ticket - js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>Add Clients into Org.</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Sidemenu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><i class="fas fa-chevron-left"></i>☰</a>
+        <img class="mx-auto d-block rounded-circle" src="images/Client.jpg" alt="">
+        <span class="user-name text-center">Nabila Samy</span><br>
+        <a class="text-center" href="userProfile.html"><i class="fas fa-user"></i> Profile</a>
+        <a class="text-center" href="Client_Admin_Manage_Client.html"><i class="fas fa-user"></i> Add Clients to Org.</a>
+        <a class="text-center" href="Client_Admin_Manage_Ticket.html"><i class="fas fa-user"></i> Admin Create Tickets</a>
+        <a class="text-center" href="Client_Admin_View_Projects.html"><i class="fas fa-user"></i> Admin View Projects</a>
+        <a class="text-center" href="Client_User_Manage_Ticket.html"><i class="fas fa-user"></i> User Create Tickets</a>
+        <a class="text-center" href="OrgAdmin_Clients_Manage.html"><i class="fas fa-user"></i> Manage Page</a>
+        <a class="text-center" href="OrgAdmin_Manage_Org.html"><i class="fas fa-user"></i> Org. Data</a>
+        <a class="text-center" href="OrgAdmin_Manage_Tickets.html"><i class="fas fa-user"></i> Manage Tickets</a>
+        <a class="text-center" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <!-- End Sidemenu -->
+
+    <div id="main">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: var(--primary) !important;">
+            <button class="openbtn" onclick="openSide()">☰</button>
+            <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+            <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+            <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Organization Admin_Organization Page -->
+        <div class="client_admin_page text-center">
+            <div class="container">
+                <h1>Welcome to Client related to Organization Page</h1>
+                <hr style="background-color: var(--primary) !important;">
+
+                <div class="row Client_Details">
+                    <div class="col-md-3 Client_Logo">
+                        <img src="images/Client.jpg" class="mx-auto d-block" name="logo" id="logo" alt="" />
+                        <input class="custom-file mx-auto" type="file" name="myFile"><br>
+                    </div>
+
+                    <div class="col-md-9 Client_info">
+                        <form method="post" name="saveClientAdmin" id="saveClientAdmin">
+                            <span>English Name: </span>
+                            <input class="form-control" type="text" name="en_name" id="en_name" placeholder="Enter your English Name" required><br>
+                            <span>Arabic Name: </span>
+                            <input class="form-control" style="left: 2px;" type="text" name="ar_name" id="ar_name" placeholder="Enter your Arabic Name" required><br>
+                            <span>Email: </span>
+                            <input class="form-control" style="left: 30px;" type="text" name="email" id="email" placeholder="Enter your Email" required><br>
+                            <span>Telephone: </span>
+                            <input class="form-control" style="left: 13px;" type="number" name="telephone" id="telephone" placeholder="Enter your Telephone" required><br>
+                            <span>Org. Website you related: </span>
+                            <input class="form-control" style="left: -40px;" type="text" name="website" id="website" placeholder="Enter Organization Website" required><br>
+                            <button class="btn btn-secondary" style="margin: 10px;" onclick="saveAdmin();">Save</button>
+                        </form>
+                    </div>
+                </div>
+
+                <br>
+                <span class="select_Span">Select which clients you want to display</span>
+                <select name="Filter">
+                    <option selected disabled>Choose here</option>
+                    <option value="Active People">Active People</option>
+                    <option value="All People">All People</option>
+                </select>
+                <br><br>
+                <form method="post" name="ad_mg_cli" id="ad_mg_cli">
+                    <table id="ad_mg_cli_table" border=3 align="center">
+                        <th colspan="9">Clients</th>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>User Type</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Status</th>
+                            <th>Photo</th>
+                        </tr>
+
+                        <tr>
+                            <td><input class="form-control" type="text" name="f_name" id="f_name" placeholder="First Name" required></td>
+                            <td><input class="form-control" type="text" name="m_name" id="m_name" placeholder="Middle Name" required></td>
+                            <td><input class="form-control" type="text" name="l_name" id="l_name" placeholder="Last Name" required></td>
+
+                            <td>
+                                <select name="Type" id="type">
+                                    <option selected disabled>Choose here</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
+                            </td>
+
+                            <td><input class="form-control" type="number" id="telephone" placeholder="Telephone" required></td>
+                            <td><input class="form-control" type="email" id="email" placeholder="Email" required></td>
+                            <td><input class="form-control" type="password" name="psw" id="psw" placeholder="Password" required></td>
+
+                            <td>
+                                <select name="Status" id="status">
+                                    <option selected disabled>Choose here</option>
+                                    <option value="enabled">Enabled</option>
+                                    <option value="disabled">Disabled</option>
+                                </select>
+                            </td>
+                            <td><input type="file" name="myFile"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button class="btn btn-secondary" onclick="saveUser();">Save User</button>
+                </form>
+
+                <button class="btn btn-secondary" onclick="add_fields_adm_mgmt_client();">Add User</button>
+                <button class="btn btn-secondary" onclick="changeUser_adm_mgmt_client();">Change User Type</button>
+                <form style="display: inline-block;" action="userProfile.html">
+                    <button class="btn btn-secondary">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <!-- End Organization Admin_Organization Page -->
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/Ticket - js.js"></script>
+</body>
+
+</html>

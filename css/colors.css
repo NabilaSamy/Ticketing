@@ -1,0 +1,41 @@
+:root {
+    --primary: #000;
+    --secondary: #6BA5C7;
+}
+
+.s_menu {
+    color: white;
+}
+
+.sidebar a {
+    color: #000;
+}
+
+.sidebar a:hover {
+    color: #6BA5C7;
+}
+
+.sidebar .closebtn {
+    color: #000;
+}
+
+.s_menu li:hover,
+.navbar-brand:hover,
+.navbar-nav > .nav-link,
+.navbar-nav .nav-link:hover {
+    color: #DCDCDC;
+}
+
+.org_view_ticket .assign a {
+    color: black;
+}
+
+.sidebar .closebtn:hover {
+    background-color: #5a6268;
+}
+
+.cust_main_page li a,
+.cust_view_ticket .link-pages li a,
+.org_main_page li a {
+    color: #138FC4;
+}

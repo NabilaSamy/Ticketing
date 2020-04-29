@@ -1,0 +1,588 @@
+﻿{
+    "lang": {
+        "ar": "ar",
+        "ar-text": "عربي",
+        "en": "en",
+        "en-text": "english"
+    },
+    "dir": {
+        "ar": "rtl",
+        "en": "ltr"
+    },
+    {
+        "Name": "Home",
+        "en": "Home",
+        "ar": "الصفحه الرئيسيه"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Setting",
+        "en": "Setting",
+        "ar": "الإعدادات"
+    },
+    {
+        "Name": "Account",
+        "en": "Account",
+        "ar": "الحساب الشخصي"
+    },
+    {
+        "Name": "Logout",
+        "en": "Logout",
+        "ar": "تسجيل الخروج"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "About us",
+        "en": "About us",
+        "ar": "من نحن"
+    },
+    {
+        "Name": "Features",
+        "en": "Features",
+        "ar": "الميزات"
+    },
+    {
+        "Name": "Contact us",
+        "en": "Contact us",
+        "ar": "اتصل بنا"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Review",
+        "en": "Review",
+        "ar": "التعليقات"
+    },
+    {
+        "Name": "Login",
+        "en": "Login",
+        "ar": "تسجيل الدخول"
+    },
+    {
+        "Name": "Signup",
+        "en": "Signup",
+        "ar": "انشاء حساب"
+    },
+    {
+        "Name": "Submit",
+        "en": "Submit",
+        "ar": "إرسال"
+    },
+    {
+        "Name": "Click",
+        "en": "Click",
+        "ar": "اضغط"
+    },
+    {
+        "Name": "Edit",
+        "en": "Edit",
+        "ar": "تعديل"
+    },
+    {
+        "Name": "First Name",
+        "en": "First Name",
+        "ar": "الاسم الاول"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Middle Name",
+        "en": "Middle Name",
+        "ar": "الاسم الاوسط"
+    },
+    {
+        "Name": "Last Name"
+    },
+    {
+        "Name": "",
+        "en": "Last Name",
+        "ar": "الاسم العائله"
+    },
+    {
+        "Name": "Email"
+    },
+    {
+        "Name": "",
+        "en": "Email",
+        "ar": "البريد الالكتروني"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Password"
+    },
+    {
+        "Name": "",
+        "en": "Password",
+        "ar": "كلمة السر"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Username",
+        "en": "Username",
+        "ar": "اسم المستخدم"
+    },
+    {
+        "Name": "Cancel",
+        "en": "Cancel",
+        "ar": "إلغاء"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Issue",
+        "en": "Issue",
+        "ar": "مشكلة"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Problem",
+        "en": "Problem",
+        "ar": "مشكلة"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "you"
+    },
+    {
+        "Name": "",
+        "en": "you",
+        "ar": "انت"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "if"
+    },
+    {
+        "Name": "",
+        "en": "if",
+        "ar": "اذا"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Description"
+    },
+    {
+        "Name": "",
+        "en": "Description",
+        "ar": "الوصف"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Enter"
+    },
+    {
+        "Name": "",
+        "en": "Enter",
+        "ar": "اضغط"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Title"
+    },
+    {
+        "Name": "",
+        "en": "Title",
+        "ar": "عنوان"
+    },
+    {
+        "Name": "Page"
+    },
+    {
+        "Name": "",
+        "en": "Page",
+        "ar": "صفحة"
+    },
+    {
+        "Name": "Part",
+        "en": "Part",
+        "ar": "جزء"
+    },
+    {
+        "Name": "Write"
+    },
+    {
+        "Name": "",
+        "en": "Write",
+        "ar": "اكتب"
+    },
+    {
+        "Name": "Here"
+    },
+    {
+        "Name": "",
+        "en": "Here",
+        "ar": "هنا"
+    },
+    {
+        "Name": "Attach"
+    },
+    {
+        "Name": "",
+        "en": "Attach",
+        "ar": "ارفق"
+    },
+    {
+        "Name": "File"
+    },
+    {
+        "Name": "",
+        "en": "File",
+        "ar": "ملف"
+    },
+    {
+        "Name": "Optional"
+    },
+    {
+        "Name": "",
+        "en": "Optional",
+        "ar": "اختيارى"
+    },
+    {
+        "Name": "Create"
+    },
+    {
+        "Name": "",
+        "en": "Create",
+        "ar": "انشاء"
+    },
+    {
+        "Name": "New"
+    },
+    {
+        "Name": "",
+        "en": "New",
+        "ar": "جديد"
+    },
+    {
+        "Name": "Requirement",
+        "en": "Requirement",
+        "ar": "المتطلبات"
+    },
+    {
+        "Name": "Request",
+        "en": "Request",
+        "ar": "طلب"
+    },
+    {
+        "Name": "Information",
+        "en": "Information",
+        "ar": "معلومات"
+    },
+    {
+        "Name": "Ticket",
+        "en": "Ticket",
+        "ar": "تذكرة"
+    },
+    {
+        "Name": "Tickets",
+        "en": "Tickets",
+        "ar": "تذاكر"
+    },
+    {
+        "Name": "latest",
+        "en": "latest",
+        "ar": "اخر"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Close",
+        "en": "Close",
+        "ar": "إغلاق"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Open"
+    },
+    {
+        "Name": "",
+        "en": "Open",
+        "ar": "فتح"
+    },
+    {
+        "Name": "Browse"
+    },
+    {
+        "Name": "",
+        "en": "Browse",
+        "ar": "تصفح"
+    },
+    {
+        "Name": "Selected"
+    },
+    {
+        "Name": "",
+        "en": "Selected",
+        "ar": "محدد"
+    },
+    {
+        "Name": "no file chosen",
+        "en": "no file chosen",
+        "ar": "لم يتم اختيار اى ملف"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "Severity",
+        "en": "Severity",
+        "ar": "مستوى الخطورة"
+    },
+    {
+        "Name": "between",
+        "en": "between",
+        "ar": "بين"
+    },
+    {
+        "Name": "welcome"
+    },
+    {
+        "Name": "",
+        "en": "welcome",
+        "ar": "مرحبآ"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "view",
+        "en": "view",
+        "ar": "عرض"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "form",
+        "en": "Form",
+        "ar": "استمارة"
+    },
+    {
+        "Name": "fill",
+        "en": "Fill",
+        "ar": "املئ"
+    },
+    {
+        "Name": "this",
+        "en": "this",
+        "ar": "هذه"
+    },
+    {
+        "Name": "check",
+        "en": "check",
+        "ar": "افحص"
+    },
+    {
+        "Name": "mail",
+        "en": "mail",
+        "ar": "بريد الكترونى"
+    },
+    {
+        "Name": "send",
+        "en": "send",
+        "ar": "ارسل"
+    },
+    {
+        "Name": "Remember me",
+        "en": "Remember me",
+        "ar": "ذكرني"
+    },
+    {
+        "Name": "Forgot",
+        "en": "Forgot",
+        "ar": "نسيت"
+    },
+    {
+        "Name": "again",
+        "en": "again",
+        "ar": "مرة اخري"
+    },
+    {
+        "Name": "reset password",
+        "en": "reset password",
+        "ar": "اعادة كتابه كلمة المرور"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "profile",
+        "en": "profile",
+        "ar": "الملف الشخصي"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "organization",
+        "en": "organization",
+        "ar": "الشركة"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "mobile-phone",
+        "en": "mobile-phone",
+        "ar": "الهاتف المحمول"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "see",
+        "en": "see",
+        "ar": "تري"
+    },
+    {
+        "Name": "assign",
+        "en": "assign",
+        "ar": "تسند"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "back",
+        "en": "back",
+        "ar": "الرجوع"
+    },
+    {
+        "Name": "employee",
+        "en": "employee",
+        "ar": "موظف"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "project",
+        "en": "project",
+        "ar": "مشروع"
+    },
+    {
+        "Name": "works",
+        "en": "works",
+        "ar": "يعمل"
+    },
+    {
+        "Name": "name",
+        "en": "name",
+        "ar": "اسم"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "then",
+        "en": "then",
+        "ar": "ثم"
+    },
+    {
+        "Name": "save",
+        "en": "save",
+        "ar": "حفظ"
+    },
+    {
+        "Name": "statistics",
+        "en": "statistics",
+        "ar": "احصائية"
+    },
+    {
+        "Name": "Successfully",
+        "en": "Successfully",
+        "ar": "بنجاح"
+    },
+    {
+        "Name": "empty",
+        "en": "empty",
+        "ar": "فارغ"
+    },
+    {
+        "Name": "must"
+    },
+    {
+        "Name": "",
+        "en": "must",
+        "ar": "يجب"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "not",
+        "en": "not",
+        "ar": "لا"
+    },
+    {
+        "Name": "show"
+    },
+    {
+        "Name": "",
+        "en": "show",
+        "ar": "اعرض"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "all",
+        "en": "all",
+        "ar": "جميع"
+    },
+    {
+        "Name": "projects",
+        "en": "projects",
+        "ar": "مشاريع"
+    },
+    {
+        "Name": "customer"
+    },
+    {
+        "Name": "",
+        "en": "customer",
+        "ar": "عميل"
+    },
+    {
+        "Name": "customers",
+        "en": "customers",
+        "ar": "عملاء"
+    },
+    {
+        "Name": ""
+    },
+    {
+        "Name": "employees",
+        "en": "employees",
+        "ar": "موظفين"
+    },
+    {
+        "Name": ""
+    }
+}

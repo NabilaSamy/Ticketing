@@ -1,0 +1,559 @@
+/* Start Framework */
+body {
+    /*overflow: hidden;*/
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+::-moz-placeholder {
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 200px !important;
+    }
+}
+
+/* End Framework */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start  Menu */
+.s_menu {
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid #000;
+    z-index: 1;
+}
+
+.s_menu ul {
+    margin-left: 100px;
+}
+
+.s_menu li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.s_menu li:hover {
+    font-weight: bold;
+}
+
+/* End Menu */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Navbar */
+.navbar {
+    /*margin-top: 53px;*/
+    min-height: 70px;
+    z-index: 1;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.navbar .logo-comp {
+    margin-left: 600px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-nav > .nav-link,
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+}
+
+/* End Navbar */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Sidemenu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b3b3b3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.sidebar img {
+    margin: 0 10px 15px 10px;
+    width: 183px;
+    height: 183px;
+}
+
+.sidebar .user-name {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar a {
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    transition: 0.3s;
+    margin: 0 0 5px 0;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    position: relative;
+    left: -10px;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #fff;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* End Sidemenu */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Statictics */
+.stat {
+    padding: 70px 0;
+}
+
+.stat .tic_1 {
+    margin: 20px;
+    border: 1px solid #CCC;
+    border-radius: 20%;
+}
+
+/* End Statictics */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Data */
+.data {
+    padding: 40px 10px;
+}
+
+.data span {
+    border-top: 2px solid #000;
+}
+
+/* End Data */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Login */
+.login {
+    padding: 80px 0;
+}
+
+.login h1 {
+    font-weight: bold;
+}
+
+.login hr {
+    width: 350px;
+    height: 3px;
+}
+
+.login label {
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+.login .forget-rem {
+    position: relative;
+    margin-left: 2px;
+}
+
+.login .btn-login {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .8px;
+    border-color: #000 !important;
+}
+
+/* End Login */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Reset/ New Password */
+.resetPass {
+    padding: 80px 0;
+}
+
+.resetPass h1 {
+    font-weight: bold;
+}
+
+.resetPass hr {
+    width: 500px;
+    height: 3px;
+}
+
+.resetPass p {
+    font-size: 20px;
+}
+
+.resetPass label {
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+.resetPass .btn-login {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .8px;
+    border-color: #000 !important;
+}
+
+/* End Reset/ New Password */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Profile */
+.userProfile hr {
+    width: 350px;
+    height: 3px;
+}
+
+.userProfile img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.userProfile .btn-secondary {
+    margin: 5px;
+}
+
+/* End Profile */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Client_Admin View Project Page */
+.cli_adm_view_proj hr {
+    width: 950px;
+    height: 3px;
+}
+
+.cli_adm_view_proj table,
+.cli_adm_view_proj table td select {
+    background-color: #DCDCDC;
+}
+
+.cli_adm_view_proj table td {
+    width: 150px;
+}
+
+.cli_adm_view_proj .btn-secondary {
+    margin: 5px;
+}
+
+/* End Client_Admin View Project Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Client_Admin Manage Ticket Page */
+.client_admin_ticket hr {
+    width: 550px;
+    height: 3px;
+}
+
+.client_admin_ticket table,
+.client_admin_ticket table td select {
+    background-color: #DCDCDC;
+}
+
+.client_admin_ticket .tickets_table td,
+.client_admin_ticket .progress_table td {
+    width: 200px;
+}
+
+.client_admin_ticket .btn-secondary {
+    margin: 5px;
+}
+
+/* End  Client_Admin Manage Ticket Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Client_User Manage Ticket Page */
+.client_user_ticket hr {
+    width: 550px;
+    height: 3px;
+}
+
+.client_user_ticket table,
+.client_user_ticket table td select {
+    background-color: #DCDCDC;
+}
+
+.client_user_ticket .tickets_table td,
+.client_user_ticket .progress_table td {
+    width: 200px;
+}
+
+.client_user_ticket .btn-secondary {
+    margin: 5px;
+}
+
+/* End  Client_User Manage Ticket Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Client_Admin Manage Ticket Page */
+.client_admin_page hr {
+    width: 870px;
+    height: 3px;
+}
+
+.client_admin_page .Client_Details {
+    border: 2px solid #DCDCDC;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.client_admin_page .Client_Details .Client_Logo img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.client_admin_page .Client_Details .Client_info span {
+    position: relative;
+    display: inline-block;
+    right: 100px;
+}
+
+.client_admin_page .Client_Details .Client_info input {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+}
+
+.client_admin_page .select_Span {
+    margin-right: 15px;
+}
+
+.client_admin_page table,
+.client_admin_page table td select {
+    background-color: #DCDCDC;
+}
+
+.client_admin_page table td input {
+    width: 123px;
+}
+
+.client_admin_page table td input[type=file] {
+    width: 150px;
+}
+
+.client_admin_page .btn-secondary {
+    margin: 5px;
+}
+
+.client_admin_page table .btn-secondary {
+    display: inline-block;
+}
+
+/* End Client_Admin Manage Ticket Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start OrgAdmin Manage Org Page */
+.org_main_page hr {
+    width: 800px;
+    height: 3px;
+}
+
+.org_main_page .Org_Details {
+    border: 2px solid #DCDCDC;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.org_main_page .Org_Details .Org_Logo img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.org_main_page .Org_Details .Org_info span {
+    position: relative;
+    display: inline-block;
+    right: 100px;
+}
+
+.org_main_page .Org_Details .Org_info input {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+}
+
+.org_main_page .select_Span {
+    margin-right: 15px;
+}
+
+.org_main_page table,
+.org_main_page table td select {
+    background-color: #DCDCDC;
+}
+
+.org_main_page table td input {
+    width: 125px;
+}
+
+.org_main_page table td input[type=file] {
+    width: 150px;
+}
+
+.org_main_page .btn-secondary {
+    margin: 5px;
+}
+
+/* End OrgAdmin Manage Org Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Organization Admin Manage Tickets Page */
+.org_admin_tickets hr {
+    width: 800px;
+    height: 3px;
+}
+
+.org_admin_tickets table,
+.org_admin_tickets table td select {
+    background-color: #DCDCDC;
+}
+
+.org_admin_tickets table td {
+    width: 200px;
+}
+
+.org_admin_tickets .btn-secondary {
+    margin: 5px;
+}
+
+/* End Organization Admin Manage Tickets Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Organization Manage User Tickets Page */
+.org_user_tickets hr {
+    width: 800px;
+    height: 3px;
+}
+
+.org_user_tickets table,
+.org_user_tickets table td select {
+    background-color: #DCDCDC;
+}
+
+.org_user_tickets table td {
+    width: 130px;
+}
+
+.org_user_tickets table td input {
+    width: 200px;
+}
+
+.org_user_tickets .btn-secondary {
+    margin: 5px;
+}
+
+/* End Organization Manage User Tickets Page */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Start Organization Admin Manage Client Page */
+.org_manages .workbook .manage-switch li {
+    font-weight: bold;
+    margin: 20px 2px;
+    display: inline-block;
+    border: 1px solid #CCC;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.org_manages .manage-switch li.selected {
+    background-color: #6c757d;
+}
+
+.org_manages .manage-switch li:hover {
+    background-color: #878a8c;
+}
+
+.org_manages .manages-content div:not(.manage-content-1) {
+    display: none;
+}
+
+.org_manages .manage-content-1,
+.org_manages .manage-content-2,
+.org_manages .manage-content-3 {
+    width: 100%;
+    margin-top: -27px;
+    border: 2px solid #CCC;
+}
+
+.org_manages .manage-content-1 hr,
+.org_manages .manage-content-2 hr,
+.org_manages .manage-content-3 hr {
+    height: 1px;
+    width: 350px;
+}
+
+.org_manages .manage-content-1 table,
+.org_manages .manage-content-2 table,
+.org_manages .manage-content-3 table,
+.org_manages .manage-content-1 table td select,
+.org_manages .manage-content-2 table td select,
+.org_manages .manage-content-3 table td select {
+    background-color: #DCDCDC;
+}
+
+.org_manages .manage-content-1 table td input,
+.org_manages .manage-content-2 table td input,
+.org_manages .manage-content-3 table td input {
+    width: 140px;
+}
+
+.org_manages .manage-content-1 table td input[type=file],
+.org_manages .manage-content-2 table td input[type=file] {
+    width: 160px;
+}
+
+.org_manages .manage-content-3 table td input[type=file] {
+    width: 220px;
+}
+
+.org_manages .manage-content-1 .btn-secondary,
+.org_manages .manage-content-2 .btn-secondary,
+.org_manages .manage-content-3 .btn-secondary {
+    margin: 5px;
+}
+
+/* End Organization Admin Manage Client Page */
+/* -------------------------------------------------------------------------------------------------------- */

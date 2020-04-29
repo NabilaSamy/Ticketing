@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>Manage Org.</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Sidemenu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><i class="fas fa-chevron-left"></i>☰</a>
+        <img class="mx-auto d-block rounded-circle" src="images/Client.jpg" alt="">
+        <span class="user-name text-center">Nabila Samy</span><br>
+        <a class="text-center" href="userProfile.html"><i class="fas fa-user"></i> Profile</a>
+        <a class="text-center" href="Client_Admin_Manage_Client.html"><i class="fas fa-user"></i> Add Clients to Org.</a>
+        <a class="text-center" href="Client_Admin_Manage_Ticket.html"><i class="fas fa-user"></i> Admin Create Tickets</a>
+        <a class="text-center" href="Client_Admin_View_Projects.html"><i class="fas fa-user"></i> Admin View Projects</a>
+        <a class="text-center" href="Client_User_Manage_Ticket.html"><i class="fas fa-user"></i> User Create Tickets</a>
+        <a class="text-center" href="OrgAdmin_Clients_Manage.html"><i class="fas fa-user"></i> Manage Page</a>
+        <a class="text-center" href="OrgAdmin_Manage_Org.html"><i class="fas fa-user"></i> Org. Data</a>
+        <a class="text-center" href="OrgAdmin_Manage_Tickets.html"><i class="fas fa-user"></i> Manage Tickets</a>
+        <a class="text-center" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <!-- End Sidemenu -->
+
+    <div id="main">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: var(--primary) !important;">
+            <button class="openbtn" onclick="openSide()">☰</button>
+            <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+            <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+            <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Sidemenu -->
+        <!--<div id="mySidebar" class="sidebar bg-light" style="background-color: var(--primary) !important;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()" hidden>&#9776;</button>
+        </div>
+        <img class="mx-auto d-block" src="images/Client.jpg" />
+        <p class="client_name text-center">Ali Ahmed</p>
+        <p class="client_info text-center">Client 1</p>
+
+        <button class="btn btn-warning"><a class="active" href="Cust_MainPage.html">Home</a></button>
+        <button class="btn btn-warning"><a href="Cust_Profile.html">Profile</a></button>
+        <button class="btn btn-warning" style="position: relative; left: 25px;"><a href="Cust_ManageTicket.html">Manage Tickets</a></button>
+        <button class="btn btn-warning"><a href="index.html">Logout</a></button>
+    </div>-->
+        <!-- End Sidemenu -->
+
+        <!-- Start OrgAdmin Manage Org Page -->
+        <div class="org_main_page text-center">
+            <div class="container">
+                <h1>Welcome to Your Organization Page</h1>
+                <hr style="background-color: var(--primary) !important;">
+
+                <div class="row Org_Details">
+                    <div class="col-md-3 Org_Logo">
+                        <img src="images/EXABYTE-Egypt.jpg" class="mx-auto d-block" name="logo" id="logo" alt="" />
+                        <input class="custom-file mx-auto" type="file" name="myFile"><br>
+                    </div>
+
+
+                    <div class="col-md-9 Org_info">
+                        <form method="put" name="saveOrgDetail" id="saveOrgDetail">
+                            <span>Org. English Name: </span>
+                            <input class="form-control" type="text" name="en_org_name" id="en_org_name" required><br>
+                            <span>Org. Arabic Name: </span>
+                            <input class="form-control" type="text" name="ar_org_name" id="ar_org_name" required><br>
+                            <span>Org. Email: </span>
+                            <input class="form-control" style="left: 26px;" type="email" name="email" id="email" required><br>
+                            <span>Org. Telephone: </span>
+                            <input class="form-control" style="left: 10px;" type="number" name="telephone" id="telephone" required><br>
+                            <span>Org. Website: </span>
+                            <input class="form-control" style="left: 17px;" type="text" name="website" id="website" required><br>
+                            <button class="btn btn-secondary" onclick="saveOrgdetail();">Save</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <br>
+                <span class="select_Span">Select which user you want to display</span>
+                <select name="Filter">
+                    <option selected disabled>Choose here</option>
+                    <option value="Active People">Active People</option>
+                    <option value="All People">All People</option>
+                </select>
+                <br><br>
+                <form method="post" name="orgUser" id="orgUser">
+                    <table border=3 align="center" id="add_org_user">
+                        <th colspan="8">Users</th>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>User Type</th>
+                            <th>Status</th>
+                            <th>Photo</th>
+                        </tr>
+
+                        <tr>
+                            <td><input class="form-control" type="text" name="f_name" id="f_name" placeholder="First Name" required></td>
+                            <td><input class="form-control" type="text" name="m_name" id="m_name" placeholder="Middle Name" required></td>
+                            <td><input class="form-control" type="text" name="l_name" id="l_name" placeholder="Last Name" required></td>
+                            <td><input class="form-control" type="number" id="telephone" placeholder="Telephone" required></td>
+                            <td><input class="form-control" type="email" id="email" placeholder="Email" required></td>
+                            <td>
+                                <select name="Type" id="type">
+                                    <option selected disabled>Choose here</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="Status" id="status">
+                                    <option selected disabled>Choose here</option>
+                                    <option value="enabled">Enabled</option>
+                                    <option value="disabled">Disabled</option>
+                                </select>
+                            </td>
+                            <td><input type="file" name="myFile"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button class="btn btn-secondary" onclick="saveOrgUser();">Save User</button>
+                </form>
+                <button class="btn btn-secondary" onclick="add_fields_org_user();">Add User</button>
+                <button class="btn btn-secondary" onclick="changeUser_org_user();">Change User Type</button>
+                <form action="userProfile.html"><button class="btn btn-secondary">Cancel</button></form>
+            </div>
+        </div>
+        <!-- End OrgAdmin Manage Org Page -->
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/Ticket - js.js"></script>
+</body>
+
+</html>

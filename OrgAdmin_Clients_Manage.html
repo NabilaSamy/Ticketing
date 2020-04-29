@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Compatiblity meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fisrt mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 element and media quires -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [ if lt IE 9] >
+			<script src="https://oss.maxcdn/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
+		<! [endif] -->
+
+    <title>Org. Manage Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- for font-awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="css/Ticket - css.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+</head>
+
+<body>
+    <!-- Start Sidemenu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><i class="fas fa-chevron-left"></i>☰</a>
+        <img class="mx-auto d-block rounded-circle" src="images/Client.jpg" alt="">
+        <span class="user-name text-center">Nabila Samy</span><br>
+        <a class="text-center" href="userProfile.html"><i class="fas fa-user"></i> Profile</a>
+        <a class="text-center" href="Client_Admin_Manage_Client.html"><i class="fas fa-user"></i> Add Clients to Org.</a>
+        <a class="text-center" href="Client_Admin_Manage_Ticket.html"><i class="fas fa-user"></i> Admin Create Tickets</a>
+        <a class="text-center" href="Client_Admin_View_Projects.html"><i class="fas fa-user"></i> Admin View Projects</a>
+        <a class="text-center" href="Client_User_Manage_Ticket.html"><i class="fas fa-user"></i> User Create Tickets</a>
+        <a class="text-center" href="OrgAdmin_Clients_Manage.html"><i class="fas fa-user"></i> Manage Page</a>
+        <a class="text-center" href="OrgAdmin_Manage_Org.html"><i class="fas fa-user"></i> Org. Data</a>
+        <a class="text-center" href="OrgAdmin_Manage_Tickets.html"><i class="fas fa-user"></i> Manage Tickets</a>
+        <a class="text-center" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <!-- End Sidemenu -->
+
+    <div id="main">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: var(--primary) !important;">
+            <button class="openbtn" onclick="openSide()">☰</button>
+            <a class="navbar-brand mr-auto" href="index.html">Exabyte</a>
+            <a class="navbar-brand justify-content-center" href="#">E-Ticketing</a>
+            <a class="navbar-brand ml-auto" href="#">Logo Comp.</a>
+        </nav>
+        <!-- End Navbar -->
+
+
+        <!-- Start Manage Page -->
+        <div class="org_manages text-center">
+            <div class="container">
+                <div class="workbook">
+                    <ul class="list-unstyled manage-switch">
+                        <li class="selected" data-class="manage-content-1">Clients</li>
+                        <li data-class="manage-content-2">SPOC</li>
+                        <li data-class="manage-content-3">Projects</li>
+                    </ul>
+
+                    <div class="manages-content">
+                        <div class="manage-content-1">
+                            <p style="margin: 5px;">Enter all Cilents related to your Organization</p>
+                            <hr style="background-color: var(--primary) !important;">
+                            <br>
+                            <form method="post" name="Saveclient" id="Saveclient">
+                                <table border=3 align="center" id="client">
+                                    <tr>
+                                        <th>English Name</th>
+                                        <th>Arabic Name</th>
+                                        <th>Email</th>
+                                        <th>Telephone</th>
+                                        <th>Website</th>
+                                        <th>Status</th>
+                                        <th>Logo</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input class="form-control" type="text" id="en_client_name" placeholder="English Name" required></td>
+                                        <td><input class="form-control" type="text" id="ar_client_name" placeholder="Arabic Name" required></td>
+                                        <td><input class="form-control" type="number" id="telephone" placeholder="Telephone" required></td>
+                                        <td><input class="form-control" type="email" id="email" placeholder="E-mail" required></td>
+                                        <td><input class="form-control" type="text" id="website" placeholder="Website" required></td>
+                                        <td>
+                                            <select name="Status">
+                                                <option selected disabled>Choose here</option>
+                                                <option value="enabled">Enabled</option>
+                                                <option value="disabled">Disabled</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="file" name="myFile"></td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <button class="btn btn-secondary" onclick="saveClient();">Save Client</button>
+                            </form>
+                            <button style="display: inline-block;" class="btn btn-secondary" onclick="add_fields_client();">Add New Client</button>
+                            <form style="display: inline-block;" action="userProfile.html"><button class="btn btn-secondary">Cancel</button></form>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                        <div class="manage-content-2">
+                            <p style="margin: 5px;">Enter SPOC Related to Clients</p>
+                            <hr style="background-color: var(--primary) !important;">
+                            <br>
+                            <form method="post" name="Savespoc" id="Savespoc">
+                                <table border=3 align="center" id="spoc">
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Middle Name</th>
+                                        <th>Last Name</th>
+                                        <th>Telephone</th>
+                                        <th>Email</th>
+                                        <th>Status</th>
+                                        <th>Logo</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input class="form-control" type="text" id="f_name" placeholder="First Name" required></td>
+                                        <td><input class="form-control" type="text" id="m_name" placeholder="Middle Name" required></td>
+                                        <td><input class="form-control" type="text" id="l_name" placeholder="Last Name" required></td>
+                                        <td><input class="form-control" type="number" id="telephone" placeholder="Telephone" required></td>
+                                        <td><input class="form-control" type="email" id="email" placeholder="E-mail" required></td>
+                                        <td>
+                                            <select name="Status">
+                                                <option selected disabled>Choose here</option>
+                                                <option value="enabled">Enabled</option>
+                                                <option value="disabled">Disabled</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="file" name="myFile"></td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <button class="btn btn-secondary" onclick="saveSPOC();">Save SPOC</button>
+                            </form>
+                            <button style="display: inline-block;" class="btn btn-secondary" onclick="add_fields_spoc();">Add New SPOC</button>
+                            <form style="display: inline-block;" action="userProfile.html"><button class="btn btn-secondary">Cancel</button></form>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                        <div class="manage-content-3">
+                            <p style="margin: 5px;">Enter All Projects related to Clients</p>
+                            <hr style="background-color: var(--primary) !important;">
+                            <form method="post" name="Saveproject" id="Saveproject">
+                                <table border=3 align="center" id="project">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Status</th>
+                                        <th>Files</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input class="form-control" type="text" id="title" placeholder="Project Title" required></td>
+                                        <td><input style="width: 200px;" class="form-control" type="text" id="descripe" placeholder="Project description" required></td>
+                                        <td>
+                                            <select name="Status" id="status">
+                                                <option selected disabled>Choose here</option>
+                                                <option value="enabled">Enabled</option>
+                                                <option value="disabled">Disabled</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="file" name="myFile"></td>
+                                    </tr>
+                                </table>
+                                <button class="btn btn-secondary" onclick="saveProject();">Save Project</button>
+                            </form>
+                            <button class="btn btn-secondary" onclick="add_fields_project();">Add New Project</button>
+                            <!-- ///////////////////////////////////////////////////////////////////// -->
+                            <hr style="background-color: var(--primary) !important;">
+                            <p style="margin: 5px;">Enter All Sub-Projects related to Clients</p>
+                            <hr style="background-color: var(--primary) !important;">
+                            <form method="post" name="SavesubProject" id="SavesubProject">
+                                <table border=3 align="center" id="subProject">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Warranty Start</th>
+                                        <th>Warranty End</th>
+                                        <th>Status</th>
+                                        <th>Files</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input class="form-control" type="text" id="title" placeholder="Project Title" required></td>
+                                        <td><input style="width: 200px;" class="form-control" type="text" id="descripe" placeholder="Project description" required></td>
+                                        <td><input class="form-control" type="text" id="warrenty_start" placeholder="Warrenty Start" required></td>
+                                        <td><input class="form-control" type="text" id="warrenty_end" placeholder="Warrenty End" required></td>
+                                        <td>
+                                            <select name="Status" id="status">
+                                                <option selected disabled>Choose here</option>
+                                                <option value="enabled">Enabled</option>
+                                                <option value="disabled">Disabled</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="file" name="myFile">
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                <br>
+                                <button class="btn btn-secondary" onclick="saveSubProject();">Save Sub-Project</button>
+                            </form>
+                            <button class="btn btn-secondary" onclick="add_fields_subProject();">Add New Sub-Project</button>
+                            <form action="userProfile.html"><button class="btn btn-secondary">Cancel</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Manage Page -->
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/Ticket - js.js"></script>
+</body>
+
+</html>
